@@ -43,7 +43,7 @@ let simpleScore = function(word){
   let simplePoint = 1
   let simpleWordScore = word.toUpperCase()
   for (i=0; i<word.length; i++){
-    simpleWordScore = i+1;
+    simpleWordScore = Number(i+1);
   }
 return simpleWordScore
 }
