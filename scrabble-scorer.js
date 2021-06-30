@@ -43,12 +43,11 @@ let simpleScore = function(word){
   let simplePoint = 1
   let simpleWordScore = word.toUpperCase()
   for (i=0; i<word.length; i++){
-    simpleWordScore = Number(i+1);
+    simplePoint = (i+1);
   }
-return simpleWordScore
+return simplePoint
 }
 
-// console.log(simpleScore('Brian'));
 
 let vowelBonusScore = function(word){
   let vowels = ['a','e','i','o','u']
