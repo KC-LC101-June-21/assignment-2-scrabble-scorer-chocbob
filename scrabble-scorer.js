@@ -40,7 +40,7 @@ function initialPrompt() {
 
 
 let simpleScore = function(word){
-  let simplePoint = 1
+  let simplePoint = 0
   let simpleWordScore = word.toUpperCase()
   for (i=0; i<word.length; i++){
     simplePoint = (i+1);
