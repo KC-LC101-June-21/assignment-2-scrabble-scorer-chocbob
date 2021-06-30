@@ -76,7 +76,7 @@ let scrabbleScore = function(word){
   let wordPoints = 0;
   for (i=0; i<word.length; i++){
     // for(letters in newPointStructure){
-      wordPoints = (wordPoints + Number(newPointStructure[word[i]]))
+      wordPoints = (wordPoints + (newPointStructure[word[i]]))
     // }
   } return wordPoints
 }
@@ -118,7 +118,7 @@ function transform(oldPointStructure) {
   for (key in oldPointStructure) { 
     for (i=0; i < oldPointStructure[key].length; i++) {
      let newKey = oldPointStructure[key][i]
-     transformPoints[newKey.toLowerCase()] = key
+     transformPoints[newKey.toLowerCase()] = Number(key)
     }
   } 
   return transformPoints; 
